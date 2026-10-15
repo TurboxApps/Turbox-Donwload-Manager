@@ -1,0 +1,39 @@
+# Large Executables & Third-party Binaries (>100MB forbidden by GitHub)
+ffmpeg.exe
+deno.exe
+MicrosoftEdgeWebview2Setup.exe
+backup_classic_idm/
+*.zip
+*.bin
+
+# Build and Temporary Files
+payload.zip
+staging_payload/
+*.tmp
+*.log
+*.bak
+crash.log
+startup_error.log
+*.pdb
+Mapping.txt
+
+# Personal User Data & Configurations
+downloads_history.dat
+download_dir.cfg
+downloads_history.json
+
+# Visual Studio & Output Folders
+.vs/
+[Bb]in/
+[Oo]bj/
+Output/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# System & OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

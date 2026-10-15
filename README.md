@@ -1,102 +1,125 @@
+<div align="center">
 
-<img width="1167" height="733" alt="Screenshot_26" src="https://github.com/user-attachments/assets/e5976841-7271-436b-9667-b5a9aa190f0f" />
-<img width="1166" height="727" alt="Screenshot_27" src="https://github.com/user-attachments/assets/bf8261d7-3692-462a-9a13-dfb86306e66b" />
-<img width="649" height="425" alt="Screenshot_28" src="https://github.com/user-attachments/assets/981cefd3-9e0a-4236-9a91-34bbc473a3d3" />
-<img width="1362" height="875" alt="image" src="https://github.com/user-attachments/assets/6de44bca-f570-4d18-91f2-2f989dfcb317" />
+  <img src="turbox_icon.png" alt="Turbo X Logo" width="128" height="128" style="border-radius: 24px; box-shadow: 0 10px 30px rgba(0, 210, 255, 0.4);" />
 
+  # ⚡ Turbo X — High-Speed Download Accelerator v2.5
+  ### The Ultimate Free & Open Download Manager with 32 Parallel Socket Connections & 8K/4K Stream Capture
 
-# 🚀 Why Turbo X?
+  <p align="center">
+    <a href="https://github.com"><img src="https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011%20(64--bit)-00d2ff?style=for-the-badge&logo=windows" alt="Platform" /></a>
+    <a href="https://github.com"><img src="https://img.shields.io/badge/Version-v2.5.0-blueviolet?style=for-the-badge" alt="Version 2.5" /></a>
+    <a href="https://github.com"><img src="https://img.shields.io/badge/Speed-32%20Parallel%20Sockets-00e676?style=for-the-badge&logo=fastapi" alt="32 Sockets" /></a>
+    <a href="https://github.com"><img src="https://img.shields.io/badge/Price-100%25%20Free%20Forever-success?style=for-the-badge" alt="Free" /></a>
+    <a href="https://t.me/abrno34"><img src="https://img.shields.io/badge/Telegram-Community-29b6f6?style=for-the-badge&logo=telegram" alt="Telegram" /></a>
+  </p>
 
-Tired of **IDM's expired trial keys**, fake serial number popups, or slow browser downloads? **Turbo X** is an ultra-fast, standalone download accelerator engineered to squeeze 100% of your internet bandwidth using **32 dynamic multi-threaded socket streams**.
+  <br />
 
-Whether you're downloading massive ISO files, games, direct software links, or extracting 4K streams from **TikTok (without watermarks)**, **YouTube**, and **Facebook Reels**, Turbo X handles it all automatically.
+  <a href="../../releases/latest">
+    <img src="https://img.shields.io/badge/⚡_DOWNLOAD_STANDALONE_INSTALLER-IDMTURBO__SETUP.EXE-00e676?style=for-the-badge&logo=windows&logoColor=white" height="48" />
+  </a>
 
+  <br /><br />
 
+  <img src="screenshots/preview_main.png" alt="Turbo X Dashboard & Stream Grabber" width="800" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 210, 255, 0.2);" />
 
-## 🌟 Key Features
+</div>
 
-### ⚡ 32-Thread Socket Engine
-- Bypasses server-side speed caps by segmenting files into **32 dynamic parallel streams**.
-- Proprietary 256KB turbo memory buffer ensuring zero disk-write bottlenecks.
-- Live animated speedometer gauge and interactive visual chunk progress bars.
-
-### 🎬 Universal Video & Audio Grabber
-- Intelligent extraction powered by `yt-dlp` supporting **1,800+ streaming sites**:
-  - **TikTok** (Ultra HD, 100% clean without watermark)
-  - **YouTube & Shorts** (Up to 4K 60fps)
-  - **Facebook & Reels** (Full HD MP4)
-  - **Instagram, Twitter/X, Vimeo, Reddit, SoundCloud**
-- Automated background H.264 & AAC muxing (`ffmpeg`) so every video is 100% playable in Windows Media Player without codec errors.
-
-### 🧲 Integrated BitTorrent Swarm Engine
-- Download torrents and magnet links directly inside Turbo X.
-- High-speed DHT bootstrapping connected to 15 global tier-1 trackers.
-- No heavy third-party clients (like uTorrent or BitTorrent) required!
-
-### ⏸️ Bulletproof Pause & Resume
-- Advanced process-tree process killer prevents orphan child processes.
-- Interrupt downloads anytime; Turbo X automatically resumes right from the partial temporary chunks without starting over from 0%.
-
-### 🧩 Universal Browser Extension
-- Compatible with **Google Chrome, Brave, Microsoft Edge, and Mozilla Firefox**.
-- Floating **"⚡ Download with Turbo X"** button appears automatically when hovering over any video player.
-- Intercepts all browser downloads (.zip, .exe, .iso, .pdf, Google Drive, Mega) seamlessly.
-
-### 🎨 9 High-Contrast Cyber Themes
-- Personalize your workspace with:
-  - 🌌 **Cyberpunk Neon** (Cyan & Deep Dark)
-  - 🌿 **Neon Emerald** (Hacker Green)
-  - 🖤 **AMOLED Deep Dark** (Pure Black)
-  - 🔮 **Midnight Violet**
-  - ⚡ **Obsidian Amber**
-  - ☀️ **Solar High-Contrast**
+<br />
 
 ---
 
-## 📊 Speed Comparison
+## 🌟 What's New in v2.5 / নতুন কী কী যুক্ত ও সমাধান করা হয়েছে:
 
-| Feature | Standard Browser (Chrome/Edge) | Old Download Managers | ⚡ Turbo X (v2.0) |
-| :--- | :---: | :---: | :---: |
-| **Max Socket Connections** | 1 Single Socket | 8 Streams | **32 Turbo Sockets** |
-| **Download Speed** | ~4.5 MB/s | ~28.0 MB/s | **~98.5 MB/s (Max Bandwidth)** |
-| **Video Grabber (TikTok/YouTube)** | ❌ No | ❌ Limited | **✅ 1800+ Sites (No Watermark)** |
-| **BitTorrent / Magnet Engine** | ❌ No | ❌ Separate App | **✅ Built-In Swarm Engine** |
-| **License / Pricing** | Free | \$24.95 / Annoying Cracks | **✅ 100% Free Forever** |
-| **Advertisements** | None | Ad Banners | **✅ Zero Ads & Clean** |
+### 🇬🇧 English:
+1. **🦁 Dedicated Brave Browser Extension Fixed**: Resolved Chromium Private Network Access (PNA) preflight blocks and invalid match pattern port issues. Brave now seamlessly intercepts downloads and detects 8K/4K streams!
+2. **📁 Dedicated Extension Folders for All Browsers**:
+   - `extension_brave/` ➔ Brave Browser
+   - `extension_chrome/` ➔ Google Chrome
+   - `extension_edge/` ➔ Microsoft Edge
+   - `extension_firefox/` ➔ Mozilla Firefox
+3. **🎬 8K, 4K, 2K, 1080p, 720p & MP3 Quality Downloader**:
+   - YouTube video player bar button (`⚡ Turbo X`).
+   - Floating video hover badge on Facebook, TikTok, Vimeo, and web players (`⚡ Download 4K/8K ▼`).
+   - Neon flyout menu for 1-click quality selection.
+4. **⏸️ Bulletproof Pause & Resume Fix**:
+   - Closing the progress popup or pausing no longer restarts the download from 0%.
+   - Downloads resume exactly where they left off by scanning partial chunks and issuing HTTP Range requests.
+5. **🗂️ Automatic Category Folder Routing**:
+   - Downloads are automatically sorted into dedicated subdirectories:
+     - `Downloads\Video\` ➔ Videos & Movies
+     - `Downloads\Music\` ➔ MP3 & Songs
+     - `Downloads\Programs\` ➔ Software & Installers (.exe, .msi)
+     - `Downloads\Documents\` ➔ PDFs & Office Docs
+     - `Downloads\Compressed\` ➔ Archives (.zip, .rar, .7z)
+6. **💾 Persistent Download Directory**: Custom chosen directories are permanently saved and remembered across all dialogs.
+7. **🎮 Cyberpunk Neon Gaming Dark UI**: High-contrast dark theme across all download popups with responsive buttons and animated RAM/Speedometers.
+8. **📦 Standalone Setup Installer (`IDMTurbo_Setup.exe`)**:
+   - One-click setup wizard (~2 MB).
+   - Automatically installs to `%LocalAppData%\Programs\IDM Turbo Downloader`.
+   - Creates Desktop & Start Menu shortcuts, registers in Windows Add/Remove Programs.
+9. **🛡️ Anti-Tamper & GitHub-Safe Protection**:
+   - Protected with standard Obfuscar obfuscation (encrypted strings, randomized symbol names, SuppressIldasm).
+   - 100% clean PE metadata: safe for GitHub Releases, VirusTotal, and Windows Defender.
+10. **🚀 `update/` Distribution Folder**: Ready-to-deploy folder containing the standalone installer, protected executable, and all browser extensions.
 
 ---
 
-## 📥 Installation
-
-1. Go to the [Releases Page](../../releases/latest) and download `TurboX_Setup.exe`.
-2. Run the installer and click **Next** to install.
-3. Launch **Turbo X** from your Desktop or Start Menu.
-4. *(Optional)* Add the browser extension from the included `extension` folder to enjoy 1-click video downloads!
-
-> **Note on Windows SmartScreen:**  
-> Because Turbo X is an independent open project without a \$400/yr commercial code-signing certificate, Windows Defender might show an "Unrecognized app" prompt on first run. Simply click **"More info"** ➔ **"Run anyway"**.
+### 🇧🇩 বাংলা (সমস্যা সমাধান ও আপডেটের বিবরণ):
+1. **🦁 Brave ব্রাউজার এক্সটেনশন ফিক্স**: আগেরবার Brave-এ ডাউনলোড না হওয়ার মূল কারণ ছিল Chromium Private Network Access (PNA) ব্লক এবং ম্যানিফেস্টে পোর্ট নাম্বার দেওয়া। এগুলো সংশোধন করা হয়েছে, এখন Brave-এ ১০০% স্মুথলি কাজ করে।
+2. **📁 সব ব্রাউজারের জন্য আলাদা আলাদা ফোল্ডার**:
+   - `extension_brave/` (Brave-এর জন্য)
+   - `extension_chrome/` (Google Chrome-এর জন্য)
+   - `extension_edge/` (Microsoft Edge-এর জন্য)
+   - `extension_firefox/` (Mozilla Firefox-এর জন্য)
+3. **🎬 8K, 4K, 2K, 1080p, 720p ও MP3 কোয়ালিটি ডাউনলোডার**: YouTube ও যেকোনো ভিডিও প্লেয়ারে সরাসরি কোয়ালিটি সিলেক্ট করার বাটন ও পপআপ মেন্যু যুক্ত করা হয়েছে।
+4. **⏸️ পজ ও রেজ্যুম ফিক্স**: ডাউনলোড পজ করে পপআপ কেটে দিলে বা পুনরায় রেজ্যুম করলে আগে শুরু (0%) থেকে শুরু হতো। এখন যেখান পর্যন্ত ডাউনলোড হয়েছিল ঠিক সেখান থেকেই নির্বিঘ্নে বাকিটা ডাউনলোড হবে।
+5. **🗂️ অটোমেটিক ক্যাটাগরি ফোল্ডার বিভাজন**: ভিডিও ফাইল সরাসরি `Downloads\Video\`, গান `Downloads\Music\`, সফটওয়্যার `Downloads\Programs\`, ডকুমেন্টস `Downloads\Documents\` এবং জিপ ফাইল `Downloads\Compressed\` ফোল্ডারে স্বয়ংক্রিয়ভাবে সেভ হবে।
+6. **💾 ডিরেক্টরি পারসিস্টেন্স**: যে ফোল্ডার সিলেক্ট করবেন সেটাই সারা জীবনের জন্য সেভ হয়ে থাকবে।
+7. **🎮 নিয়ন গেমিং ডার্ক UI ও রিয়েলটাইম স্পিডোমিটার**: স্পিড ও র‍্যাম ডায়নামিকালি আপ-ডাউন করবে এবং বাটনগুলো নিখুঁতভাবে দৃশ্যমান।
+8. **📦 নতুন স্ট্যান্ডঅ্যালন ইনস্টলার (`IDMTurbo_Setup.exe`)**: মাত্র ২ মেগাবাইটের ইনস্টলার এক ক্লিকেই পুরো সফটওয়্যার ও শর্টকাট ইনস্টল করে দেয়।
+9. **🛡️ কোড প্রটেকশন ও গিটহাব সেফটি**: কোড যাতে কেউ সহজে এডিট বা মডিফাই না করতে পারে তার জন্য অবফাসকেট করা হয়েছে, কিন্তু গিটহাব বা উইন্ডোজ ডিফেন্ডার কোনোভাবেই একে ব্লক করবে না।
+10. **🚀 `update/` ফোল্ডার**: সব আপডেট করা এক্সটেনশন ও ইনস্টলার এক ফোল্ডারে গুছিয়ে দেওয়া হয়েছে।
 
 ---
 
-## 🧩 Browser Extension Setup (Chrome, Brave, Edge & Firefox)
+## 📥 Installation / কীভাবে ইনস্টল করবেন
 
-1. Open your browser's extension manager:
-   - Chrome / Brave / Edge: `chrome://extensions`
-   - Firefox: `about:debugging#/runtime/this-firefox`
-2. Turn on **Developer Mode** (top-right toggle).
+### Option 1: Standalone Installer (Recommended)
+1. Download **`IDMTurbo_Setup.exe`** from the `update/` folder or [Releases](../../releases/latest).
+2. Double-click to launch the setup wizard.
+3. Click **"Install Now"** — it installs in seconds and creates Desktop & Start Menu shortcuts.
+
+### Option 2: Portable
+1. Simply run **`IDMTurboDownloader.exe`** directly from the root or `update/` folder.
+
+---
+
+## 🧩 Browser Extension Setup (Brave, Chrome, Edge & Firefox)
+
+1. Open your browser's extension page:
+   - 🦁 **Brave:** `brave://extensions`
+   - 🌐 **Chrome:** `chrome://extensions`
+   - 🌊 **Edge:** `edge://extensions`
+   - 🦊 **Firefox:** `about:debugging#/runtime/this-firefox`
+2. Turn ON **"Developer mode"** (top-right toggle).
 3. Click **"Load unpacked"** (or *"Load Temporary Add-on"* in Firefox).
-4. Select the `extension` folder inside your Turbo X directory:
-   - For Chrome / Brave / Edge: select `extension/`
-   - For Firefox: select `extension_firefox/`
-5. Done! You will now see the floating Turbo X button on every video!
+4. Select the matching folder:
+   - For Brave: select `extension_brave/`
+   - For Chrome: select `extension_chrome/`
+   - For Edge: select `extension_edge/`
+   - For Firefox: select `extension_firefox/manifest.json`
+5. Done! You will see the floating **⚡ Turbo X** download badge on videos and 8K/4K/MP3 stream capture options.
 
 ---
 
-## 🛡️ Security & Privacy
+## 🛠️ Build from Source / নিজে বিল্ড করতে চাইলে:
 
-- **100% Clean & Safe:** No adware, no bundled toolbars, no hidden crypto-miners.
-- **Obfuscated & Anti-Tampered:** Protected against reverse-engineering and unauthorized modification.
-- **Local Execution:** All downloads and credentials stay strictly on your local computer.
+Run the automated build script:
+```cmd
+build.bat
+```
+This automatically compiles the application, runs anti-tamper code obfuscation, packages `payload.zip`, builds `IDMTurbo_Setup.exe`, and refreshes the `update/` folder!
 
 ---
 
@@ -104,7 +127,5 @@ Whether you're downloading massive ISO files, games, direct software links, or e
 
 - **Lead Developer:** Abir
 - **Telegram Channel:** [Join @abrno34](https://t.me/abrno34)
-- **Version:** 2.0.0
-- **Feedback & Issues:** Feel free to open an issue or connect on Telegram!
-
----
+- **Version:** 2.5.0
+- **License:** Free & Open for personal use

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Turbo X 8K/4K Downloader</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    body {
+      width: 360px;
+      background: #0b0e14;
+      color: #e2e8f0;
+      padding: 16px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .logo-text {
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #38bdf8;
+    }
+    .status-badge {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .status-online {
+      background: rgba(34, 197, 94, 0.15);
+      color: #22c55e;
+      border: 1px solid rgba(34, 197, 94, 0.35);
+    }
+    .status-offline {
+      background: rgba(239, 68, 68, 0.15);
+      color: #ef4444;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+    }
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+    .card {
+      background: #111722;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: 10.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #94a3b8;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .video-detect-info {
+      font-size: 11.5px;
+      color: #38bdf8;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 6px;
+      display: none;
+    }
+    .input-row {
+      display: flex;
+      gap: 6px;
+    }
+    input[type="text"] {
+      flex: 1;
+      background: #192231;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      padding: 8px 10px;
+      color: #fff;
+      font-size: 12px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input[type="text"]:focus {
+      border-color: #38bdf8;
+    }
+    .quality-chips {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .chip {
+      background: #161f2e;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      padding: 6px 4px;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      color: #cbd5e1;
+      transition: all 0.15s ease;
+      user-select: none;
+    }
+    .chip:hover {
+      border-color: #38bdf8;
+      color: #fff;
+    }
+    .chip.active {
+      background: rgba(56, 189, 248, 0.2);
+      border-color: #38bdf8;
+      color: #38bdf8;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.25);
+    }
+    .chip-8k.active {
+      background: rgba(236, 72, 153, 0.2);
+      border-color: #ec4899;
+      color: #ec4899;
+      box-shadow: 0 0 10px rgba(236, 72, 153, 0.25);
+    }
+    .chip-mp3.active {
+      background: rgba(244, 63, 94, 0.2);
+      border-color: #f43f5e;
+      color: #f43f5e;
+      box-shadow: 0 0 10px rgba(244, 63, 94, 0.25);
+    }
+    .dropdown-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    select {
+      flex: 1;
+      background: #192231;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      padding: 7px 8px;
+      color: #f8fafc;
+      font-size: 11.5px;
+      font-weight: 500;
+      outline: none;
+      cursor: pointer;
+    }
+    select:focus {
+      border-color: #38bdf8;
+    }
+    .btn-main {
+      width: 100%;
+      background: linear-gradient(135deg, #0284c7 0%, #38bdf8 100%);
+      color: #0b0e14;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.4px;
+      border: none;
+      border-radius: 6px;
+      padding: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 4px;
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.35);
+    }
+    .btn-main:hover {
+      filter: brightness(1.1);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45);
+    }
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .toggle-label {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .toggle-sub {
+      font-size: 10.5px;
+      color: #64748b;
+      margin-top: 1px;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 36px;
+      height: 20px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #334155;
+      transition: .2s;
+      border-radius: 20px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 14px;
+      width: 14px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .2s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #38bdf8;
+    }
+    input:checked + .slider:before {
+      transform: translateX(16px);
+    }
+    .btn-secondary {
+      background: #192231;
+      color: #94a3b8;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 6px;
+      width: 100%;
+      text-align: center;
+      padding: 7px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 4px;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover {
+      color: #fff;
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+    .footer-note {
+      text-align: center;
+      font-size: 10px;
+      color: #475569;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <img src="icons/icon32.png" width="20" height="20" alt="Turbo X">
+      <span class="logo-text">Turbo X 8K/4K</span>
+    </div>
+    <div id="statusBadge" class="status-badge status-offline">
+      <span class="dot"></span>
+      <span id="statusText">Checking...</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-title">
+      <span>Target Media Link</span>
+      <span id="btnUseCurrentTab" style="color: #38bdf8; cursor: pointer; text-transform: none; font-weight: 700;">↻ Current Page</span>
+    </div>
+    <div id="videoDetectInfo" class="video-detect-info">🎬 Detected: <span id="videoTitleText">Loading...</span></div>
+    <div class="input-row">
+      <input type="text" id="urlInput" placeholder="Paste link (YouTube, TikTok, Facebook...)">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-title">
+      <span>Quality & Resolution</span>
+      <span id="qualityBadge" style="color: #38bdf8; font-weight: 800;">4K ULTRA</span>
+    </div>
+    
+    <!-- Quick Quality Preset Chips -->
+    <div class="quality-chips">
+      <div class="chip chip-8k" data-quality="8K">🌟 8K Ultra</div>
+      <div class="chip active" data-quality="4K">🎬 4K UHD</div>
+      <div class="chip" data-quality="2K">🚀 2K QHD</div>
+      <div class="chip" data-quality="1080p">🔥 1080p</div>
+      <div class="chip" data-quality="720p">✨ 720p HD</div>
+      <div class="chip chip-mp3" data-quality="MP3">🎵 MP3 Audio</div>
+    </div>
+
+    <!-- Detailed Dropdowns -->
+    <div class="dropdown-row">
+      <select id="selQuality">
+        <option value="8K">8K Ultra HD (4320p - Best Quality)</option>
+        <option value="4K" selected>4K Ultra HD (2160p - Best Quality)</option>
+        <option value="2K">2K Quad HD (1440p - Universal MP4)</option>
+        <option value="1080p">1080p Full HD (H.264 - 100% Playable)</option>
+        <option value="720p">720p HD (H.264 - 100% Playable)</option>
+        <option value="480p">480p Standard (H.264 - 100% Playable)</option>
+        <option value="360p">360p Medium</option>
+        <option value="MP3">Audio Only - MP3 (High Quality 320 kbps)</option>
+        <option value="M4A">Audio Only - M4A (Original AAC Audio)</option>
+      </select>
+      <select id="selFormat" style="max-width: 90px;">
+        <option value="mp4" selected>MP4</option>
+        <option value="mkv">MKV</option>
+        <option value="webm">WEBM</option>
+        <option value="mp3">MP3</option>
+        <option value="m4a">M4A</option>
+      </select>
+    </div>
+
+    <button id="btnDownload" class="btn-main">
+      <span>⚡</span>
+      <span id="btnDownloadText">Download with Turbo X</span>
+    </button>
+  </div>
+
+  <div class="card">
+    <div class="toggle-row">
+      <div>
+        <div class="toggle-label">Auto Intercept Downloads</div>
+        <div class="toggle-sub">Route browser downloads automatically</div>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="interceptToggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <button id="btnOpenApp" class="btn-secondary">⚡ Open Turbo X PC Dashboard</button>
+
+  <div class="footer-note">
+    Turbo X Accelerator 2.5 • 32-Thread Ultra Engine
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

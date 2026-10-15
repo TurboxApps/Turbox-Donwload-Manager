@@ -1,0 +1,39 @@
+========================================================================
+                      TURBO X - END USER LICENSE AGREEMENT
+========================================================================
+
+Welcome to Turbo X (Download Accelerator & Built-in Turbo Web Browser).
+Developed by Abir.
+
+Please read the following terms and conditions carefully before installing 
+or using Turbo X.
+
+1. LICENSE GRANT:
+   Turbo X is provided to you free of charge for personal and non-commercial 
+   use. You are granted a non-exclusive, non-transferable license to install 
+   and use this software on your Windows personal computer.
+
+2. HIGH-SPEED ACCELERATION & MEDIA DOWNLOADS:
+   Turbo X includes 32-parallel socket acceleration, video stream 
+   sniffers, and multi-protocol download capabilities. You agree to use 
+   the software in accordance with all applicable laws and respect the 
+   copyrights and intellectual property rights of content owners.
+
+3. PRIVACY & LOCAL DATA:
+   Turbo X respects your privacy. Your browsing history, downloads, cookies, 
+   and preferences are stored locally on your own computer. No personal 
+   browsing data is collected or sold.
+
+4. NO WARRANTY:
+   Turbo X is provided "AS IS", without warranty of any kind, either express 
+   or implied. The developer is not liable for any damages resulting from 
+   the use or misuse of this software.
+
+5. ACCEPTANCE:
+   By selecting "I accept the agreement" and proceeding with the installation, 
+   you acknowledge that you have read, understood, and agreed to be bound 
+   by these terms and conditions.
+
+========================================================================
+                      THANK YOU FOR CHOOSING TURBO X!
+========================================================================
