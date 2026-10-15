@@ -1,3 +1,13 @@
+# Root-level loose binaries (already tracked inside update/ and src/)
+/IDMTurboDownloader.exe
+/IDMTurbo_Setup.exe
+/*.dll
+/runtimes/
+/aria2c.exe
+/yt-dlp.exe
+/app.ico
+/app.manifest
+
 # Large Executables & Third-party Binaries (>100MB forbidden by GitHub)
 ffmpeg.exe
 deno.exe
@@ -42,4 +52,4 @@ Output/
 Thumbs.db
 ehthumbs.db
 Desktop.ini
-$RECYCLE.BIN/
+.BIN/
