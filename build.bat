@@ -41,7 +41,7 @@ echo ======================================================================
 powershell -NoProfile -Command ^
     "if (Test-Path 'staging_payload') { Remove-Item -Recurse -Force 'staging_payload' }; " ^
     "New-Item -ItemType Directory -Path 'staging_payload' | Out-Null; " ^
-    "Copy-Item -Force 'IDMTurboDownloader.exe', 'Microsoft.Web.WebView2.Core.dll', 'Microsoft.Web.WebView2.WinForms.dll', 'src\app.manifest', 'src\app.ico' 'staging_payload\'; " ^
+    "Copy-Item -Force 'IDMTurboDownloader.exe', 'Microsoft.Web.WebView2.Core.dll', 'Microsoft.Web.WebView2.WinForms.dll', 'yt-dlp.exe', 'aria2c.exe', 'ffmpeg.exe', 'src\app.manifest', 'src\app.ico' 'staging_payload\'; " ^
     "Copy-Item -Recurse -Force 'runtimes' 'staging_payload\runtimes'; " ^
     "Copy-Item -Recurse -Force 'extensions\brave' 'staging_payload\extension_brave'; " ^
     "Copy-Item -Recurse -Force 'extensions\chrome' 'staging_payload\extension_chrome'; " ^

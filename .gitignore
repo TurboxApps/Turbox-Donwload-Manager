@@ -1,6 +1,8 @@
-# Root-level loose binaries (already tracked inside update/ and src/)
+# Root-level loose binaries and installer binaries
 /IDMTurboDownloader.exe
-/IDMTurbo_Setup.exe
+IDMTurbo_Setup.exe
+*.Setup.exe
+update/IDMTurbo_Setup.exe
 /*.dll
 /runtimes/
 /aria2c.exe
