@@ -8964,12 +8964,23 @@ namespace IDMClone
                 };
                 extForm.Controls.Add(lblSub);
 
-                // Browser folders
+                // Browser folders with resilient fallback resolution
                 string baseDir = AppDomain.CurrentDomain.BaseDirectory;
                 string bravePath = Path.Combine(baseDir, "extension_brave");
+                if (!Directory.Exists(bravePath) && Directory.Exists(Path.Combine(baseDir, "extensions", "brave"))) bravePath = Path.Combine(baseDir, "extensions", "brave");
+                else if (!Directory.Exists(bravePath) && Directory.Exists(Path.Combine(baseDir, "update", "extension_brave"))) bravePath = Path.Combine(baseDir, "update", "extension_brave");
+
                 string chromePath = Path.Combine(baseDir, "extension_chrome");
+                if (!Directory.Exists(chromePath) && Directory.Exists(Path.Combine(baseDir, "extensions", "chrome"))) chromePath = Path.Combine(baseDir, "extensions", "chrome");
+                else if (!Directory.Exists(chromePath) && Directory.Exists(Path.Combine(baseDir, "update", "extension_chrome"))) chromePath = Path.Combine(baseDir, "update", "extension_chrome");
+
                 string edgePath = Path.Combine(baseDir, "extension_edge");
+                if (!Directory.Exists(edgePath) && Directory.Exists(Path.Combine(baseDir, "extensions", "edge"))) edgePath = Path.Combine(baseDir, "extensions", "edge");
+                else if (!Directory.Exists(edgePath) && Directory.Exists(Path.Combine(baseDir, "update", "extension_edge"))) edgePath = Path.Combine(baseDir, "update", "extension_edge");
+
                 string firefoxPath = Path.Combine(baseDir, "extension_firefox");
+                if (!Directory.Exists(firefoxPath) && Directory.Exists(Path.Combine(baseDir, "extensions", "firefox"))) firefoxPath = Path.Combine(baseDir, "extensions", "firefox");
+                else if (!Directory.Exists(firefoxPath) && Directory.Exists(Path.Combine(baseDir, "update", "extension_firefox"))) firefoxPath = Path.Combine(baseDir, "update", "extension_firefox");
 
                 // Ensure all exist
                 try

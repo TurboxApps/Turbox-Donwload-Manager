@@ -3,10 +3,16 @@ ffmpeg.exe
 deno.exe
 MicrosoftEdgeWebview2Setup.exe
 backup_classic_idm/
+idm-csharp/
 *.zip
 *.bin
 
-# Build and Temporary Files
+# Build outputs & Obfuscation tools
+Obfuscated/
+obfuscar_tools/
+obfuscar.xml
+TurboX_Installer.iss
+build_installer.bat
 payload.zip
 staging_payload/
 *.tmp
