@@ -15,7 +15,7 @@
 
   <br />
 
-  <a href="../../releases/latest">
+  <a href="https://github.com/TurboxApps/Turbox-Donwload-Manager/releases/latest">
     <img src="https://img.shields.io/badge/⚡_DOWNLOAD_STANDALONE_INSTALLER-IDMTURBO__SETUP.EXE-00e676?style=for-the-badge&logo=windows&logoColor=white" height="48" />
   </a>
 
@@ -54,10 +54,10 @@
      - `Downloads\Compressed\` ➔ Archives (.zip, .rar, .7z)
 6. **💾 Persistent Download Directory**: Custom chosen directories are permanently saved and remembered across all dialogs.
 7. **🎮 Cyberpunk Neon Gaming Dark UI**: High-contrast dark theme across all download popups with responsive buttons and animated RAM/Speedometers.
-8. **📦 Standalone Setup Installer (`IDMTurbo_Setup.exe`)**:
-   - One-click setup wizard (~2 MB).
+8. **📦 All-in-One Standalone Setup Installer (`IDMTurbo_Setup.exe`)**:
+   - Single-click self-contained setup. Bundles full 8K/4K/MP3 media engine (ffmpeg, yt-dlp), torrent engine (aria2c), and multi-browser extensions.
    - Automatically installs to `%LocalAppData%\Programs\IDM Turbo Downloader`.
-   - Creates Desktop & Start Menu shortcuts, registers in Windows Add/Remove Programs.
+   - Creates Desktop & Start Menu shortcuts, registers in Windows Add/Remove Programs. Zero extra downloads required!
 9. **🛡️ Anti-Tamper & GitHub-Safe Protection**:
    - Protected with standard Obfuscar obfuscation (encrypted strings, randomized symbol names, SuppressIldasm).
    - 100% clean PE metadata: safe for GitHub Releases, VirusTotal, and Windows Defender.
@@ -77,18 +77,18 @@
 5. **🗂️ অটোমেটিক ক্যাটাগরি ফোল্ডার বিভাজন**: ভিডিও ফাইল সরাসরি `Downloads\Video\`, গান `Downloads\Music\`, সফটওয়্যার `Downloads\Programs\`, ডকুমেন্টস `Downloads\Documents\` এবং জিপ ফাইল `Downloads\Compressed\` ফোল্ডারে স্বয়ংক্রিয়ভাবে সেভ হবে।
 6. **💾 ডিরেক্টরি পারসিস্টেন্স**: যে ফোল্ডার সিলেক্ট করবেন সেটাই সারা জীবনের জন্য সেভ হয়ে থাকবে।
 7. **🎮 নিয়ন গেমিং ডার্ক UI ও রিয়েলটাইম স্পিডোমিটার**: স্পিড ও র‍্যাম ডায়নামিকালি আপ-ডাউন করবে এবং বাটনগুলো নিখুঁতভাবে দৃশ্যমান।
-8. **📦 নতুন স্ট্যান্ডঅ্যালন ইনস্টলার (`IDMTurbo_Setup.exe`)**: মাত্র ২ মেগাবাইটের ইনস্টলার এক ক্লিকেই পুরো সফটওয়্যার ও শর্টকাট ইনস্টল করে দেয়।
+8. **📦 অল-ইন-ওয়ান স্ট্যান্ডঅ্যালন ইনস্টলার (`IDMTurbo_Setup.exe`)**: সম্পূর্ণ স্বয়ংসম্পূর্ণ ইনস্টলার। এর ভেতরেই রয়েছে ইউটিউব 8K/4K/MP3 মিডিয়া ইঞ্জিন (ffmpeg, yt-dlp), টরেন্ট ইঞ্জিন (aria2c) এবং ব্রাউজার এক্সটেনশন। আলাদা কোনো ফাইল বা রানটাইম ডাউনলোড করার প্রয়োজন নেই।
 9. **🛡️ কোড প্রটেকশন ও গিটহাব সেফটি**: কোড যাতে কেউ সহজে এডিট বা মডিফাই না করতে পারে তার জন্য অবফাসকেট করা হয়েছে, কিন্তু গিটহাব বা উইন্ডোজ ডিফেন্ডার কোনোভাবেই একে ব্লক করবে না।
-10. **🚀 `update/` ফোল্ডার**: সব আপডেট করা এক্সটেনশন ও ইনস্টলার এক ফোল্ডারে গুছিয়ে দেওয়া হয়েছে।
+10. **🚀 `update/` ফোল্ডার**: সব আপডেট করা এক্সটেনশন ও মূল ফাইল এক ফোল্ডারে গুছিয়ে দেওয়া হয়েছে।
 
 ---
 
 ## 📥 Installation / কীভাবে ইনস্টল করবেন
 
-### Option 1: Standalone Installer (Recommended)
-1. Download **`IDMTurbo_Setup.exe`** from the `update/` folder or [Releases](../../releases/latest).
+### Option 1: All-in-One Standalone Installer (Recommended)
+1. Download **`IDMTurbo_Setup.exe`** from [Latest GitHub Releases](https://github.com/TurboxApps/Turbox-Donwload-Manager/releases/latest).
 2. Double-click to launch the setup wizard.
-3. Click **"Install Now"** — it installs in seconds and creates Desktop & Start Menu shortcuts.
+3. Click **"Install Now"** — it installs everything in seconds and creates Desktop & Start Menu shortcuts. Zero extra downloads!
 
 ### Option 2: Portable
 1. Simply run **`IDMTurboDownloader.exe`** directly from the root or `update/` folder.
