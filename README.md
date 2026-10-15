@@ -16,6 +16,11 @@
   <br />
 
   <a href="https://github.com/TurboxApps/Turbox-Donwload-Manager/releases/latest">
+    <img width="1164" height="734" alt="Screenshot_48" src="https://github.com/user-attachments/assets/0ed9eee4-c901-4a12-93b7-58d7845231fe" />
+    <img width="759" height="480" alt="Screenshot_49" src="https://github.com/user-attachments/assets/2afc9fa7-79d9-400b-a9a3-7bc712237400" />
+    <img width="739" height="445" alt="Screenshot_50" src="https://github.com/user-attachments/assets/b8799cee-1f31-443c-bde5-178fdb90c853" />
+
+
     <img src="https://img.shields.io/badge/⚡_DOWNLOAD_STANDALONE_INSTALLER-IDMTURBO__SETUP.EXE-00e676?style=for-the-badge&logo=windows&logoColor=white" height="48" />
   </a>
 
